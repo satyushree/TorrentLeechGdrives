@@ -128,7 +128,7 @@ def add_url(aria_instance, text_url, c_file_name):
             options=options
         )
     except Exception as e:
-        return False, "**FAILED** \n" + str(e) + " \nPlease do not send SLOW links. Read /help"
+        return False, "**FAILED** \n" + str(e) + " \nPlease do not send SLOW links."
     else:
         return True, "" + download.gid + ""
 
@@ -451,6 +451,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
             )
         )
         return False
+    #
     except Exception as e:
         LOGGER.info(str(e))
         if "not found" in str(e) or "'file'" in str(e):
