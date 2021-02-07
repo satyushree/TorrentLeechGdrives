@@ -7,7 +7,7 @@ class Config(Config):
     APP_ID = 1309280 #imp
     API_HASH = "af327dd857e0e65f80fefcf6d0af4afd" #imp
     AUTH_CHANNEL = [-1001195135562, 1087968824] #imp replace your_id with your id from telegram or delete
-    INDEX_LINK = "https://shree.satyu.workers.dev
+    INDEX_LINK = "https://shree.satyu.workers.dev"
     GLEECH_COMMAND = "gleech@shreeleechworldbot"
     YTDL_COMMAND = 'ytdl@shreeleechworldbot'
     TELEGRAM_LEECH_COMMAND_G = "tleech@shreeleechworldbot"
