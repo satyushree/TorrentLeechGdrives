@@ -13,7 +13,7 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "1476931837:AAFVU1wy7Y9WKh-lxOx5XYPUsnIT5Mt_f3E")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 1309280))
-    API_HASH = os.environ.get("API_HASH", af327dd857e0e65f80fefcf6d0af4afd)
+    API_HASH = os.environ.get("API_HASH", "af327dd857e0e65f80fefcf6d0af4afd")
     OWNER_ID = int(os.environ.get("OWNER_ID", 1243382770))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
@@ -51,6 +51,8 @@ class Config(object):
     YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl@shreeleechworldbot")
     RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", """[ffmg]
 type = drive
+client_id = 437611717237-cohifba2pi09vdkg8i4osf9t58tqj8er.apps.googleusercontent.com
+client_secret = 1QAQdobw0XXAAfZjRn0ITF6w
 scope = drive
 root_folder_id = 1Ss-FUl2rRaTiLk1lq74yAcmj5i8dPJXj
 token = {"access_token":"ya29.A0AfH6SMA9J7PDzd-5V-8OlOcfVO4Mc_GZSQ-0PsnQWuXZXTIcka2ljreP9cRLvkPxI_rlbR6LHGSafMHt7ZVjSA4reSNAehEw00lAR8_-QgxUa-dUqr_ocVHLbS84lPCzKIH8P7lAWdwzDwVte1u0yH-0Hjzd","token_type":"Bearer","refresh_token":"1//0gNvii4scilMBCgYIARAAGBASNwF-L9IroVv4pg_aTu627eGOpNv7HjRxjUOof_OFCxGOdHA2Af2tUgB0YsRGsxrSdVRMBNNKyqc","expiry":"2021-02-07T18:59:45.7438573+05:30"}
