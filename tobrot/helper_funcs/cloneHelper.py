@@ -45,13 +45,24 @@ class CloneHelper:
         
     
     def config(self):
-        if not os.path.exists('rclone.conf'):
-            with open('rclone.conf', 'w+', newline="\n", encoding = 'utf-8') as fole:
-                fole.write(f"{RCLONE_CONFIG}")
-        if os.path.exists("rclone.conf"):
-            with open("rclone.conf", "r+") as file:
-                con = file.read()
-                self.dname = re.findall("\[(.*)\]", con)[0]
+#      if not os.path.exists('rclone.conf'):
+#            with open('rclone.conf', 'w+', newline="\n", encoding = 'utf-8') as fole:
+#                fole.write(f"{RCLONE_CONFIG}")
+#        if os.path.exists("rclone.conf"):
+#            with open("rclone.conf", "r+") as file:
+ #               con = file.read()
+ #               self.dname = re.findall("\[(.*)\]", con)[0] ///
+                
+                
+                 with open(
+            'rclone.conf',
+            'a',
+            newline="\n",
+            encoding= 'utf-8'
+        ) as fole:
+            fole.write("[DRIVE]\n")
+            fole.write(f"{RCLONE_CONFIG}")
+            
     def get_id(self):
         mes = self.mess
         txt= mes.reply_to_message.text
